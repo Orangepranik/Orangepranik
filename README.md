@@ -24,7 +24,7 @@
 
 ---
 
-### 🚀 What I'm building · Что строю — **Vanguard ERP**
+### 🚀 What I'm building now · Что строю сейчас — **Vanguard ERP**
 
 A production-grade, **event-sourced ERP/MES** for a real electronics manufacturer (batteries, 5G antennas, remote displays). One **operational truth** — who / what / when / how much — fully traceable per serial number and recomputable after the fact.
 
@@ -38,6 +38,23 @@ A production-grade, **event-sourced ERP/MES** for a real electronics manufacture
 
 ---
 
+### 🗂️ Also built · Что ещё делал
+
+**📈 Trading Analytics Platform** — multi-tenant **SaaS** trading-journal analytics.
+Log deals → risk / behavioral / strategy analytics → dashboard. A modular monolith cut along clean seams so it can split into event-driven services.
+
+- 🧩 **17+ domain modules** with hard boundaries — in-memory event bus (swappable for Kafka), strict `api → service → repository → models` layering
+- 🔐 **Multi-tenant accounts** — auth, subscriptions & trials, feature-gating + quotas, append-only audit log
+- 💸 **Crypto billing** — HD wallets (BIP-39), xpub minting, on-chain invoices, KEK-encrypted key handling
+- 📊 **Analytics** — Recharts + a custom SVG heatmap; pure-function metrics fully decoupled from the DB
+- 🛡️ **Security-first** — CSRF double-submit, strict CSP, slowapi rate-limiting, presigned-S3 uploads, defense-in-depth validation (Pydantic + Zod)
+
+`Next.js 14 · React 18 · TypeScript · FastAPI · SQLAlchemy 2 async · PostgreSQL 16 · Redis 7 · ARQ · S3 / MinIO · Zod · Docker`
+
+> *Тот же почерк, что и в Vanguard: FastAPI + Next.js, модульный монолит, event-driven, ADR на каждое решение, безопасность по умолчанию.*
+
+---
+
 ### 🛠️ Tech stack · Стек
 
 **Frontend**
@@ -47,6 +64,7 @@ A production-grade, **event-sourced ERP/MES** for a real electronics manufacture
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%204-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Recharts](https://img.shields.io/badge/Recharts-FF6B6B?style=for-the-badge)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 
 **Backend**
 
@@ -57,6 +75,7 @@ A production-grade, **event-sourced ERP/MES** for a real electronics manufacture
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis%20%2B%20arq-FF4438?style=for-the-badge&logo=redis&logoColor=white)
 ![Alembic](https://img.shields.io/badge/Alembic-6BA81E?style=for-the-badge)
+![S3 / MinIO](https://img.shields.io/badge/S3%20%2F%20MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white)
 
 **Architecture & Practices**
 
