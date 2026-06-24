@@ -26,7 +26,7 @@
 
 ### 🚀 What I'm building now · Что строю сейчас — **Vanguard ERP**
 
-A production-grade, **event-sourced ERP/MES** for a real electronics manufacturer (batteries, 5G antennas, remote displays). One **operational truth** — who / what / when / how much — fully traceable per serial number and recomputable after the fact.
+A production-grade, **event-sourced ERP/MES** for a real electronics manufacturer. One **operational truth** — who / what / when / how much — fully traceable per serial number and recomputable after the fact.
 
 - ⚡ **Event store at the core** — every state change emits an immutable event; BI, costing & statuses are *projections* rebuilt from the journal
 - 🔬 **Per-SN traceability & actual costing** — lot-pinning, purchase-price variance, ABC overhead absorption
